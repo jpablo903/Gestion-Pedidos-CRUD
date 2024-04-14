@@ -1,0 +1,22 @@
+﻿<Window x:Class="ConexionGestionPedidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConexionGestionPedidos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Activated="Window_Activated">
+    <Grid>
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="68,16,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial" RenderTransformOrigin="-0.021,0.458"/>
+        <ListBox x:Name="listaClientes" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="26,60,573,149" FontSize="16" MouseDoubleClick="listaClientes_MouseDoubleClick"/>
+        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="305,16,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial"/>
+        <ListBox x:Name="pedidosCliente" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="248,60,348,149" FontSize="16"/>
+        <ListBox Name="todosPedidos" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="469,92,29,149" FontSize="16"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="547,41,0,0" VerticalAlignment="Top" Width="109" Height="38" Click="Button_Click"/>
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="26,307,0,0" VerticalAlignment="Top" Height="40" Width="83" Click="Button_Click_1"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="142,307,0,0" VerticalAlignment="Top" Height="40" Width="85" Click="Button_Click_2"/>
+        <TextBox x:Name="insertarCliente" HorizontalAlignment="Left" Margin="26,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201" Height="31" FontSize="14"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="265,307,0,0" VerticalAlignment="Top" Height="40" Width="85" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>

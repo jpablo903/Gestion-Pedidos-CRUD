@@ -1,0 +1,15 @@
+﻿<Window x:Class="ConexionGestionPedidos.Actualiza"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConexionGestionPedidos"
+        mc:Ignorable="d"
+        Title="Actualiza" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre de Cliente: " HorizontalAlignment="Left" Margin="160,102,0,0" VerticalAlignment="Top" Width="155" Height="40" FontSize="16" FontFamily="Arial"/>
+        <TextBox x:Name="cuadroActualiza" HorizontalAlignment="Left" Margin="320,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="30" FontFamily="Arial" FontSize="14"/>
+        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="320,152,0,0" VerticalAlignment="Top" Width="127" Height="36" FontSize="14" FontFamily="Arial" Click="Button_Click"/>
+
+    </Grid>
+</Window>
